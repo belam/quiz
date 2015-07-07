@@ -3,3 +3,37 @@ html, body, .quiz {
     height: 99%;
 }
 
+.range .start, .range .end, .range .types {
+    float: left;
+    padding: 10px;
+}
+.range input, .range label {
+    float: left;
+}
+.range label + input {
+    clear: both;
+}
+.range label {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.range input {
+    margin-top: 5px;
+}
+.range .lbl{
+    margin-bottom: 5px;
+}
+.start, .end, .types {
+    border: 1px solid black;
+    margin: 5px;
+}
+.actions {
+    clear: both;
+    margin: 10px;
+}
+.actions button {
+    width: 75px;
+    float: right;
+    margin: 7px;
+}
+

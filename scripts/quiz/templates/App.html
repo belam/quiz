@@ -1,7 +1,29 @@
 <div>
     <div data-dojo-attach-point="contentNode">
         <div data-dojo-attach-point="leftNode">
-            <div data-dojo-attach-point="foo"></div>
+            <div class="range">
+                <div class="start" data-dojo-attach-point="rangeFromNode">
+                    <div class="lbl">From:</div>
+                </div>
+                <div class="end" data-dojo-attach-point="rangeToNode">
+                    <div class="lbl">To:</div>
+                </div>
+                <div class="types">
+                    <div class="lbl">Operation Type:</div>
+                    <input id="chkA" type="checkbox" data-dojo-attach-point="chkAddition"/>
+                    <label for="chkA">Addition</label>
+                    <input id="chkS" type="checkbox" data-dojo-attach-point="chkSubtraction"/>
+                    <label for="chkS">Subtraction</label>
+                    <input id="chkM" type="checkbox" data-dojo-attach-point="chkMultiplication" checked/>
+                    <label for="chkM">Multiplication</label>
+                    <input id="chkD" type="checkbox" data-dojo-attach-point="chkDivision"/>
+                    <label for="chkD">Division</label>
+                </div>
+            </div>
+            <div class="actions">
+                <button data-dojo-attach-point="btnReset">Reset</button>
+                <button data-dojo-attach-point="btnStart">Start</button>
+            </div>
         </div>
         <div data-dojo-attach-point="centerNode"></div>
     </div>
